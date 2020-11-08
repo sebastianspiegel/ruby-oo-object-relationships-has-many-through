@@ -1,3 +1,4 @@
+require 'pry'
 class Customer
     attr_accessor :name, :age
     @@all = []
@@ -6,6 +7,7 @@ class Customer
         @name = name
         @age = age
         @@all < self
+        binding.pry 
     end
 
     def self.all
